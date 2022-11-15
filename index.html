@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6_galería</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 100%;
+        }
+        :root{
+            --color-primary: #622E0E;
+            --color-secundary:#C08D4F;
+            --color-terciary: #8E7B68;
+            --color-bg: #F0EAB6;
+            --color-black:#160D04;
+        }
+        .card_txt{
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            display: flex; 
+            flex-direction: column;
+            padding: 1em 0 0 0;
+            justify-content: baseline;
+            height: 100%;
+        }
+        .galery{
+            display:flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .card{
+            display: flex; 
+            flex-basis: 26%;
+            flex-grow: 1;
+            flex-direction: column;
+            border: solid 0.2em var(--color-terciary);
+            background-color: var(--color-bg);
+            padding: 1em;
+        }
+        .card:nth-child(5) img{
+            object-position: bottom;
+        }
+        .card:nth-child(1), .card:nth-child(6){
+            flex: 1 3 40%; 
+        }
+        .card:nth-child(3){
+            flex: 2 1 40%; 
+        }
+        .card_img{
+            width: 100%;
+            height: 224px;
+        }
+        .card_img img{
+            object-fit: cover;
+            height: 100%;
+        }
+        .card_txt h1{
+            font-size: 1em;
+            padding: 0 0 0.2em 0;
+            flex-grow: 0;
+            font-family: 'Plus Jakarta Sans';
+            font-style: bold;
+            font-weight: 900;
+            font-size: 20px;
+            color: var(--color-primary)
+        }
+       .card_txt h2{
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            padding: 0 0 0.5em 0;
+            font-weight: 800;
+            font-size: 13px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-secundary);
+        }
+        .card_text p{
+            font-weight: 100;
+            font-size: 1.25em;
+            padding: 1em 0 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="galery">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/samson.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Samson Captured by the Philistines (1619)</h1>
+                    <h2>Guercino</h2>
+                    <p>According to the Bible, Samson, whose strength came from his hair, was shorn by his duplicitous lover, Delilah, and then set upon by the Philistines, who bound and blinded him.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/interior.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Interior with a Young Couple (1655)</h1>
+                    <h2>Pieter de Hooch</h2>
+                    <p>De Hooch was particularly skilled at interior scenes that capture the fall of light into rooms constructed from elaborately interlocking rectangular forms. These spaces provide the backdrop for a glimpse into the private lives of prosperous families.</p>
+                </div>
+                <div class="card">
+                    <figure class="card_img">
+                        <img src="img/tobias.jpg" alt="">
+                    </figure>
+                    <header class="card_txt">
+                        <h1>Tobias Curing His Father's Blindness (1630)</h1>
+                        <h2>Bernardo Strozzi</h2>
+                        <p>The subject of the painting is drawn from the apocryphal Book of Tobit, which tells how the archangel Raphael directed Tobias to cure his father’s blindness with the gall of the fish he had caught.</p>
+                    </header>
+                </div>
+                <div class="card">
+                    <figure class="card_img">
+                        <img src="img/medea.jpg" alt="">
+                    </figure>
+                    <header class="card_txt">
+                        <h1>The Disillusioned Medea (ca. 1640)</h1>
+                        <h2>Paulus Bor</h2>
+                        <p>In ancient myth, the sorceress Medea fell in love with the hero Jason and helped him to steal the fleece of a golden ram from her father. After having two sons with her, Jason abandoned Medea, driving her to murder their children as well as his new bride.</p>
+                    </header>
+                </div>
+                <div class="card">
+                    <figure class="card_img">
+                        <img src="img/vanitas.jpg" alt="">
+                    </figure>
+                    <header class="card_txt">
+                        <h1>Vanitas Still Life (1603)</h1>
+                        <h2>Jacques de Gheyn II</h2>
+                        <p>De Gheyn was a wealthy amateur who is best known as a brilliant draftsman, but he also painted and engraved. This panel is generally considered to be the earliest known independent still-life painting of a vanitas subject, or symbolic depiction of human vanity.</p>
+                    </header>
+                </div>
+                <div class="card">
+                    <figure class="card_img">
+                        <img src="img/lacemaker.jpg" alt="">
+                    </figure>
+                    <header class="card_txt">
+                        <h1>The lacemaker (1656)</h1>
+                        <h2>Nicolaes Maes</h2>
+                        <p>Painted slightly after the artist’s Young Woman Peeling Apples, this scene reveals Maes’s increasing interest in anecdotal, domestic detail as he moved further out of Rembrandt’s shadow. </p>
+                    </header>
+                </div>
+            </div>
+    </main>
+</body>
+</html>
